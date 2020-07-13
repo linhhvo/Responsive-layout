@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(#ca8ab6af, #b8d992a1, #78ccd0a8);
+  font: 400 16px Roboto;
+  color: rgb(53, 53, 53);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+}
+
+p {
+  line-height: 1.5em;
+}
+
+h2,
+h3 {
+  font-family: Raleway;
+}
+
+.main-nav {
+  margin: 0 auto;
+}
+.name {
+  font: bold 2.5em Fondamento, sans-serif;
+  margin: 0.5em auto;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+.nav li {
+  list-style-type: none;
+  text-transform: uppercase;
+  background-color: rgba(250, 241, 241, 0.685);
+  font-weight: 900;
+  padding: 0.5em 0;
+  margin: 0.5rem auto;
+  border-radius: 10px;
+}
+
+.nav a:hover {
+  color: rgba(172, 40, 172, 0.822);
+}
+
+header {
+  margin: 0 auto 3em;
+}
+
+header img {
+  width: 80%;
+  margin: 2em 0 0.75em;
+}
+
+.light-text {
+  color: rgb(80, 80, 80);
+}
+
+main img {
+  max-width: 100%;
+}
+
+#portfolio {
+  margin: 0;
+  padding-bottom: 1em;
+  background-color: rgba(250, 241, 241, 0.39);
+}
+
+article {
+  /* width: 90%; */
+  margin: 0 auto;
+}
+
+article p {
+  margin: 0 auto 2.5em;
+  padding: 0 0.75em;
+}
+
+.section-heading {
+  padding: 2.5em 0 2.5em;
+  font-weight: 800;
+  margin: 0;
+}
+
+.article-heading {
+  padding-top: 0.5em;
+}
+
+.skills-list li {
+  list-style-type: none;
+  background-color: rgba(252, 198, 198, 0.705);
+  padding: 0.5em 1em;
+  display: inline-block;
+  margin: 0 0.05em;
+  border-radius: 10px;
+}
+
+#skills {
+  padding-bottom: 3.5em;
+  background-color: rgba(250, 241, 241, 0.144);
+}
+
+#contact {
+  /* width: 90%; */
+  margin: 0 auto;
+  padding-bottom: 3.5em;
+  border-bottom: solid 1px rgb(117, 177, 174);
+}
+
+.email:link {
+  color: rgb(216, 95, 95);
+}
+.email:hover {
+  color: rgb(12, 95, 81);
+}
+
+.footer {
+  font-weight: bold;
+}
+
+.footer p {
+  float: left;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.footer a {
+  float: right;
+  margin: 25px 0 15px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
