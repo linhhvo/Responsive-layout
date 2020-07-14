@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Raleway:700,800,900|Fondamento"
     />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Linh Vo</title>
   </head>
 
@@ -29,7 +30,7 @@
           alt="a picture of the student"
           class="profile-img"
         />
-        <p class="light-text">
+        <p class="light-text introduction">
           Hi! I'm a front-end developer who loves responsive design and CSS. I'm
           working on the techdegree in front-end development at Treehouse and am
           excited to put all my skills to use!
@@ -40,59 +41,64 @@
     <main>
       <section id="portfolio">
         <h2 class="section-heading">Portfolio</h2>
-        <article class="marketing">
-          <img src="images/portfolio-1.png" alt="marketing page illustration" />
-          <h3 class="article-heading">Marketing Page</h3>
-          <p>
-            This project shows the front page of a marketing website meant for a
-            specific business I'm interested in.
-          </p>
-        </article>
+        <div class="grid">
+          <article class="marketing">
+            <img
+              src="images/portfolio-1.png"
+              alt="marketing page illustration"
+            />
+            <h3 class="article-heading">Marketing Page</h3>
+            <p>
+              This project shows the front page of a marketing website meant for
+              a specific business I'm interested in.
+            </p>
+          </article>
 
-        <article class="search">
-          <img src="images/portfolio-2.png" alt="search page illustration" />
-          <h3 class="article-heading">Search Page</h3>
-          <p>
-            This project seaches through a specific database to find information
-            that the user is trying to look up.
-          </p>
-        </article>
+          <article class="search">
+            <img src="images/portfolio-2.png" alt="search page illustration" />
+            <h3 class="article-heading">Search Page</h3>
+            <p>
+              This project seaches through a specific database to find
+              information that the user is trying to look up.
+            </p>
+          </article>
 
-        <article class="travel">
-          <img src="images/portfolio-3.png" alt="travel app illustration" />
-          <h3 class="article-heading">Travel App</h3>
-          <p>
-            This project compares travel times based on different transportation
-            methods and thells you the best one.
-          </p>
-        </article>
+          <article class="travel">
+            <img src="images/portfolio-3.png" alt="travel app illustration" />
+            <h3 class="article-heading">Travel App</h3>
+            <p>
+              This project compares travel times based on different
+              transportation methods and thells you the best one.
+            </p>
+          </article>
 
-        <article class="map">
-          <img src="images/portfolio-4.png" alt="map page illustration" />
-          <h3 class="article-heading">Map of Favorite Spots</h3>
-          <p>
-            This project uses mapping apis to plot points for my favorite spots
-            in the city for a do-it-yourself walking tour.
-          </p>
-        </article>
+          <article class="map">
+            <img src="images/portfolio-4.png" alt="map page illustration" />
+            <h3 class="article-heading">Map of Favorite Spots</h3>
+            <p>
+              This project uses mapping apis to plot points for my favorite
+              spots in the city for a do-it-yourself walking tour.
+            </p>
+          </article>
 
-        <article class="gallery">
-          <img src="images/portfolio-5.png" alt="gallery illustration" />
-          <h3 class="article-heading">Photo Gallery</h3>
-          <p>
-            This project shows pictures from a recent trip to the viewer and
-            allows them to easily navigate through photos.
-          </p>
-        </article>
+          <article class="gallery">
+            <img src="images/portfolio-5.png" alt="gallery illustration" />
+            <h3 class="article-heading">Photo Gallery</h3>
+            <p>
+              This project shows pictures from a recent trip to the viewer and
+              allows them to easily navigate through photos.
+            </p>
+          </article>
 
-        <article class="calculator">
-          <img src="images/portfolio-6.png" alt="calculator illustration" />
-          <h3 class="article-heading">Calculator</h3>
-          <p>
-            Someone can enter in the numbers they want, and press the big blue
-            button and get the result.
-          </p>
-        </article>
+          <article class="calculator">
+            <img src="images/portfolio-6.png" alt="calculator illustration" />
+            <h3 class="article-heading">Calculator</h3>
+            <p>
+              Someone can enter in the numbers they want, and press the big blue
+              button and get the result.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section id="skills">
@@ -107,8 +113,8 @@
 
       <section id="contact">
         <h2 class="section-heading">Contact</h2>
-        <div class="light-text">
-          <p>
+        <div class="light-text contact-info">
+          <p class="contact-text">
             If you're interested in chatting or want more information about what
             I've been working on, I'd love to hear from you!
           </p>
@@ -125,7 +131,17 @@
 
     <footer class="footer">
       <p>Linh Vo</p>
-      <a href="#">Back to top</a>
+
+      <ul class="footer-nav">
+        <li><a class="back-to-top" href="#">Back to top</a></li>
+
+        <div class="footer-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#portfolio">Portfolio </a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </div>
+      </ul>
     </footer>
   </body>
 </html>
