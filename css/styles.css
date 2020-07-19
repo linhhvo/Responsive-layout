@@ -4,6 +4,7 @@
 
 body {
   width: 90vw;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -59,6 +60,7 @@ header img {
   width: 70%;
   max-width: 300px;
   margin-top: 2.5em;
+  border-radius: 10px;
 }
 
 .light-text {
@@ -86,9 +88,16 @@ section {
 }
 
 #portfolio {
-  margin: 0;
+  margin: 0 -5vw;
   padding-bottom: 1em;
-  background-color: rgba(250, 241, 241, 0.39);
+  background-color: rgba(250, 241, 241, 0.548);
+}
+
+.grid,
+.skills-content {
+  width: 90vw;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 article {
@@ -113,7 +122,8 @@ article p {
 }
 
 #skills {
-  background-color: rgba(250, 241, 241, 0.144);
+  background-color: rgba(245, 236, 105, 0.411);
+  margin: 0 -5vw;
 }
 
 #contact {
@@ -150,21 +160,19 @@ article p {
   list-style: none;
   text-align: right;
   line-height: 3em;
-
-}
-
-.footer-nav li {
-  display: inline-block;
-  margin-left: 1em;
 }
 
 .footer-list {
   display: none;
+  margin-left: 1em;
 }
 
 /* Tablet screen styles */
 
 @media screen and (min-width: 750px) {
+  .name {
+    margin-top: 1.5em;
+  }
   .nav {
     display: flex;
     width: 60%;
@@ -178,7 +186,7 @@ article p {
     display: flex;
     flex-direction: row-reverse;
     margin: 3em 0 4em;
- }
+  }
 
   .introduction {
     font-size: 1.3em;
@@ -207,48 +215,61 @@ article p {
     display: none;
   }
 
-.footer-list {
-  display: inline-block;
-}
+  .footer-list {
+    display: inline-block;
+  }
 
-footer {
-  height: 150px;
+  footer {
+    height: 150px;
+  }
 }
-
 /* Desktop screen styles */
 
 @media screen and (min-width: 1000px) {
-  header {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 2.5fr;
-    margin-top: 3em; */
+  .page-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-content: center;
+    padding-top: 3em;
   }
 
   .name {
-    float: left;
+    margin: 0;
+    justify-self: start;
   }
 
   .main-nav {
-    /* justify-self: end;
-    align-self: center;
-    margin: 0; */
-    float: right;
+    margin: 0;
+    justify-self: end;
   }
 
   .nav {
     margin: 0;
-    width: 100%;
   }
 
   .nav li {
-    padding: 0 0 0 2em;
-    margin: 0;
+    margin-left: 2em;
   }
 
-  .name {
-    justify-self: start;
-    margin: 0;
-    align-self: center;
+  .profile-img {
+    max-width: 400px;
+  }
+
+  #portfolio,
+  #skills {
+    margin: 0 -2.5vw;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1em;
+  }
+
+  .contact-info {
+    max-width: 60%;
+  }
+
+  footer {
+    height: initial;
   }
 }
