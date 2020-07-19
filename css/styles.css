@@ -169,7 +169,7 @@ article p {
 
 /* Tablet screen styles */
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .name {
     margin-top: 1.5em;
   }
@@ -225,7 +225,7 @@ article p {
 }
 /* Desktop screen styles */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   .page-header {
     display: grid;
     grid-template-columns: 1fr 2fr;
