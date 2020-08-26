@@ -1,2 +1,2 @@
-# techdegree-project-2
- Teamtreehouse techdegree project for unit 2: responsive layout
+# Responsive mobile-first layout
+ A basic website layout that is responsive to multiple device screen sizes
